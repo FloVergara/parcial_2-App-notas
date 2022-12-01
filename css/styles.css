@@ -1,0 +1,28 @@
+
+main {
+    flex: auto;
+  }
+
+.page-footer{
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer p {
+  color: rgb(0, 0, 0);
+}
+
+/* validacion mesnaje*/
+.error {
+  color: rgb(231, 71, 71);
+  text-align: left;
+  background-color: #ffe5e5;
+  padding: 2px 13px;
+  border:solid 2px rgb(231, 71, 71);
+  border-radius: 2px;
+}
