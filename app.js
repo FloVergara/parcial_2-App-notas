@@ -1,7 +1,8 @@
 navigator.serviceWorker.register('sw.js');
 const btnSave = document.querySelector('#btn-save'); //boton
 const textArea = document.querySelector('#text-1'); // campo nota
-const message = document.querySelector('#message-1')
+const message = document.querySelector('#message-1');
+const tareasPendientes = document.querySelector('#total') //cantidad de tareas pendientes - contador
 let container = document.querySelector('#lista-tareas'); // contenedor
 let lista = [];
 // FORMATO:
@@ -69,7 +70,9 @@ function guardarNotas(){
       const p = document.createElement('p');
       p.innerHTML = `<div class="collection">
                     <div class="collection-item">
-                    <strong> ${tarea.tarea} </strong> - ${tarea.fecha} <span tarea-id="${tarea.id}" class="material-icons right" style="cursor:pointer; color:red;">delete</span>
+                    <strong> ${tarea.tarea} </strong> - ${tarea.fecha}
+                    <span tarea-id="${tarea.id}" class="material-icons right" style="cursor:pointer; color:red;">delete</span>
+                    <span class="material-icons right" style="cursor:pointer; color:green;">edit</span>
                     </div></div>`;
       container.appendChild(p);
     });
@@ -90,3 +93,9 @@ function borrarNota(e){
     guardarNotas();
   }
 }
+
+/* ---------- FUNCION: Editar notas --------- */
+function editarNota(){
+}
+
+/* ---------- FUNCION: CONTADOR DE TAREAS PENDIENTES --------- */
