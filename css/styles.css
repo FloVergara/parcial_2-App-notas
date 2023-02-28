@@ -17,7 +17,7 @@ footer p {
   color: rgb(0, 0, 0);
 }
 
-/* validacion mesnaje*/
+/* validacion mensaje*/
 .error {
   color: rgb(231, 71, 71);
   text-align: left;
@@ -25,4 +25,12 @@ footer p {
   padding: 2px 13px;
   border:solid 2px rgb(231, 71, 71);
   border-radius: 2px;
+}
+
+/* DATOS */
+.datos p {
+  background-color: rgb(228, 92, 122);
+  color: rgb(255, 255, 255);
+  padding: 6px 10px;
+  border-radius: 5px;
 }
